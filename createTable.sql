@@ -1,12 +1,12 @@
--- test.sql
+-- createTable.sql
 
-CREATE TABLE team_members (
-  member_id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  bio TEXT,
-  contact VARCHAR(255) NOT NULL,
-  current_project VARCHAR(255),
-  img_url VARCHAR(255)
+CREATE TABLE team_members ( -- 테이블을 생성하는 SQL 쿼리
+  member_id INT AUTO_INCREMENT PRIMARY KEY, -- 멤버 ID, 자동 증가, 기본 키
+  name VARCHAR(255) NOT NULL, -- 이름, 최대 길이 255, 빈 값은 허용 X
+  bio TEXT, -- 자기 소개, 긴 텍스트
+  contact VARCHAR(255) NOT NULL, -- 연락처, 최대 길이 255, 빈 값은 허용 X
+  current_project VARCHAR(255), -- 개인 프로젝트, 최대 길이 255
+  img_url VARCHAR(255) -- 이미지 URL, 최대 길이 255
 );
 
 -- VARCHAR(255) vs TEXT
